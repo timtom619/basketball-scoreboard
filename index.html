@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Scoreboard</title>
+</head>
+<body>
+  <div id="scoreboard-container">
+    <div id="home">
+      <h1>HOME</h1>
+      <div class="point-container">
+        <p class="cursed-font team-score">0</p>
+      </div>
+      <div class="point-input">
+        <button class="btn cursed-font">+1</button>
+        <button class="btn cursed-font">+2</button>
+        <button class="btn cursed-font">+3</button>
+      </div>
+      <div class="bonus-indicator">
+        <div class="non-active-state"></div>
+        <div class="active-state left"></div>
+        <span class="verdana-font">BONUS</span>
+      </div>
+      <div class="foul-container">
+        <h3 class="foul-header">FOULS</h3>
+        <div class="foul-counter">
+          <p class="cursed-font">00</p>
+        </div>
+      </div>
+    </div>
+    <div id="middle-container">
+      <div class="game-clock cursed-font">00:00</div>
+      <div class="period-container">
+        <h3>PERIOD</h3>
+        <div>
+          <p class="cursed-font">0</p>
+        </div>
+      </div>
+      <div class="possession-container">
+        <div class="non-active-state"></div>
+        <div class="active-state"></div>
+        <span>POSS</span>
+        <div class="non-active-state"></div>
+        <div class="active-state"></div>
+      </div>
+      <div class="shot-clock-container">
+        <h3>SHOT CLOCK</h3>
+        <div class="shot-container">
+          <p class="cursed-font">00</p>
+        </div>
+      </div>
+    </div>
+    <div id="guest">
+      <h1>GUEST</h1>
+      <div class="point-container">
+        <p class="cursed-font team-score">0</p>
+      </div>
+      <div class="point-input">
+        <button class="btn cursed-font">+1</button>
+        <button class="btn cursed-font">+2</button>
+        <button class="btn cursed-font">+3</button>
+      </div>
+      <div class="bonus-indicator">
+        <span class="verdana-font">BONUS</span>
+        <div class="non-active-state"></div>
+        <div class="active-state right"></div>
+      </div>
+      <div class="foul-container">
+        <h3 class="foul-header">FOULS</h3>
+        <div class="foul-counter">
+          <p class="cursed-font">00</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
