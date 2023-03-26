@@ -94,13 +94,16 @@ h3, span {
   display: flex;
   align-items: center;
   margin-top: 25px;
-  margin-left: 12px;
   margin-bottom: 34px;
+  justify-content: space-between;
 }
 
 .foul-container, .period-container {
   width: 100%;
   text-align: center;
+}
+
+.foul-container {
   margin-top: 10px;
 }
 
@@ -124,20 +127,33 @@ h3, span {
 /* Game Clock */
 
 .game-clock {
-  color: #E11D48;
   width: 188px;
   height: 58px;
   border: 3px solid #6B7280;
+  text-align: center; 
+  margin-top: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.game-clock > p {
+  height: 50px;
   font-size: 56px;
-  text-align: center;
+  color: #E11D48;
+  margin: 0;
 }
 
 /* Period Container */
 
+.period-header {
+  margin: 0;
+}
+
 .period-box {
   width: 30px;
   height: 42px;
-  margin: 0 auto;
+  margin: 11px auto 0;
   border: 1px solid #6B7280;
 }
 
@@ -157,5 +173,25 @@ h3, span {
 
 /* Shot Clock */
 .shot-clock-container {
-  width: 
+  margin-top: 10px;
+}
+.shot-container {
+  width: 101px;
+  height: 52px;
+  border: 3px solid #6B7280;
+  /* margin: 10 auto; */
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+}
+
+.shot-container > p {
+  font-size: 56px;
+  color: #E11D48;
+  margin: 0;
+  text-align: center;
+}
+
+.shot-clock-header {
+  margin: 30px auto 0 auto;
 }
