@@ -60,3 +60,26 @@ function addThree(e) {
     guestScore.textContent = currentValue;
   }
 }
+
+// Game clock logic
+const clockTimer = document.querySelector(".game-clock-timer");
+let seconds = 0;
+let minute = 0;
+
+function startClock() {
+  if (seconds > 9) {
+    stopClock();
+  } else {
+    seconds++;
+    clockTimer.textContent = `00:0${seconds}`;
+  }
+  
+}
+
+function stopClock() {
+  clearInterval(timerID);
+  console.log("clock stopped");
+}
+
+const timerID = setInterval(startClock, 1000)
+
