@@ -67,13 +67,14 @@ let seconds = 0;
 let minute = 0;
 
 function startClock() {
-  if (seconds > 9) {
-    stopClock();
+  if (seconds > 8) {
+    seconds++
+    clockTimer.textContent = `00:${seconds}`
   } else {
     seconds++;
     clockTimer.textContent = `00:0${seconds}`;
   }
-  
+ 
 }
 
 function stopClock() {
