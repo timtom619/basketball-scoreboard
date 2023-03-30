@@ -70,11 +70,16 @@ function startClock() {
   if (seconds > 8) {
     seconds++
     clockTimer.textContent = `00:${seconds}`
+
+    if (seconds === 60) {
+      seconds = 0;
+      minute++;
+      clockTimer.textContent = `0${minute}:0${seconds}`
+    }
   } else {
     seconds++;
-    clockTimer.textContent = `00:0${seconds}`;
+    clockTimer.textContent = `0${minute}:0${seconds}`
   }
- 
 }
 
 function stopClock() {
